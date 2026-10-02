@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  color-scheme: dark;
+}
+
+body {
+  background-color: #0b0f14;
+  background-image:
+    radial-gradient(circle at 15% 0%, rgba(242, 169, 60, 0.08), transparent 45%),
+    radial-gradient(circle at 85% 20%, rgba(74, 222, 155, 0.06), transparent 40%);
+  background-attachment: fixed;
+}
+
+::selection {
+  background-color: #f2a93c;
+  color: #0b0f14;
+}
+
+/* thin scrollbar for the hash list */
+.hashscroll::-webkit-scrollbar {
+  width: 8px;
+}
+.hashscroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+.hashscroll::-webkit-scrollbar-thumb {
+  background-color: #263345;
+  border-radius: 999px;
+}
